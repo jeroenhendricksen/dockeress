@@ -1,2 +1,1 @@
-# dockeress
-Docker Essentials training material
+# Docker Essentials Training Material
