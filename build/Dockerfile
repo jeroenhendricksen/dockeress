@@ -1,6 +1,6 @@
 FROM ubuntu
 
-ADD test /
+ADD test.txt /
 
 ENV Hello=World
 
