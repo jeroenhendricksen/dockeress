@@ -14,4 +14,4 @@ FROM mcr.microsoft.com/dotnet/aspnet:5.0
 COPY --from=build-env /app/out .
 
 # Start
-ENTRYPOINT ["dotnet", "com.infosupport.dockeress.example5.dll"]
+ENTRYPOINT ["dotnet", "com.infosupport.dockeress.example.dll"]
