@@ -1,0 +1,5 @@
+micronaut:
+  application:
+    name: micronautWs
+  server:
+    port: 8080

@@ -1,0 +1,10 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net5.0</TargetFramework>
+    <AssemblyName>com.infosupport.dockeress.example</AssemblyName>
+    <RootNamespace>com.infosupport.dockeress.example</RootNamespace>
+  </PropertyGroup>
+
+</Project>

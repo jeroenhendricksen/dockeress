@@ -1,0 +1,17 @@
+version: '3.9'
+
+services:
+  micronaut-ws:
+    build: .
+    hostname: micronaut-ws
+    environment:
+      - "JAVA_OPTS=-Xms128m -Xmx512m"
+    ports:
+      - "8726:8080"
+    volumes:
+      - type: volume
+        source: maven-repo-cache
+        target: /root/.m2
+
+volumes:
+  maven-repo-cache:

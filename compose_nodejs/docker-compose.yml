@@ -1,0 +1,8 @@
+version: '3.9'
+
+services:
+  node-ws:
+    build: .
+    hostname: node-ws
+    ports:
+      - "8625:8080"

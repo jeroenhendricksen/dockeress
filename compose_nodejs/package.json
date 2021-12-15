@@ -1,0 +1,14 @@
+{
+  "name": "node-ws",
+  "version": "1.0.0",
+  "description": "Example NodeJS Webserver application",
+  "main": "server.js",
+  "scripts": {
+    "server": "node server.js"
+  },
+  "author": "Info Support",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
