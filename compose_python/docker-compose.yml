@@ -1,0 +1,7 @@
+version: '3.9'
+
+services:
+  python-app:
+    build: .
+    hostname: python-app
+    init: true
