@@ -1,10 +1,10 @@
-version: '3.9'
-
 services:
   db:
     image: mysql:8
     volumes:
-      - db_data:/var/lib/mysql
+      - type: volume
+        source: db_data
+        target: /var/lib/mysql
     restart: unless-stopped
     environment:
       MYSQL_ROOT_PASSWORD: somewordpress
@@ -20,5 +20,6 @@ services:
       WORDPRESS_DB_HOST: db:3306
       WORDPRESS_DB_USER: wordpress
       WORDPRESS_DB_PASSWORD: wordpress
+
 volumes:
     db_data:
