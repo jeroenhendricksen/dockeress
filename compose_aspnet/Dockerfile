@@ -10,9 +10,9 @@ RUN dotnet restore -r ${RUNTIME} /p:PublishReadyToRun=true
 
 # Copy everything else and build
 COPY . ./
-# /p:PublishTrimmed=true
+
+# Might cause trouble for ARM based builds: /p:PublishTrimmed=true
 RUN dotnet publish -c Release -o /app -r ${RUNTIME} --self-contained true --no-restore /p:PublishReadyToRun=true /p:PublishSingleFile=true
-#RUN dotnet publish -c Release -o /app --no-restore
 
 # Build runtime image
 FROM mcr.microsoft.com/dotnet/aspnet:6.0
