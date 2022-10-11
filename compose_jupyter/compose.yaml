@@ -1,0 +1,7 @@
+services:
+  jupyter:
+    image: jupyter/minimal-notebook
+    ports:
+      # this port won't be visible on the network
+      # which is better for security
+      - "127.0.0.1:8023:8888"
