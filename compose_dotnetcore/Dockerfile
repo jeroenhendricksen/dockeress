@@ -10,7 +10,9 @@ COPY . ./
 RUN dotnet publish -c Release -o out
 
 # Build runtime image
-FROM mcr.microsoft.com/dotnet/runtime:6.0
+# We need aspnet image here (instead of runtime) because
+# of Apple M1 architecture shizzle
+FROM mcr.microsoft.com/dotnet/aspnet:6.0
 COPY --from=build-env /app/out .
 
 # Start
