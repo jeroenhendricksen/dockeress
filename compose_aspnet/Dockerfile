@@ -2,7 +2,8 @@ FROM mcr.microsoft.com/dotnet/sdk:6.0 AS build-env
 WORKDIR /source
 
 # For MacOS amd64 (M1) set ARG RUNTIME to linux-arm64
-ARG RUNTIME=linux-x64
+# ARG RUNTIME=linux-x64
+ARG RUNTIME=linux-arm64
 
 # Copy necessary files and restore as distinct layer
 COPY *.csproj .
