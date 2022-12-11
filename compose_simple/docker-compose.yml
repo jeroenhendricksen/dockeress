@@ -4,5 +4,5 @@ services:
     environment:
       - DB_URL="jdbc://mydb:5801"
     ports:
-      - "80:80"
+      - "8729:80"
     

@@ -1,5 +1,5 @@
 # https://hub.docker.com/_/node?tab=tags
-FROM node:18-alpine
+FROM node:19-alpine
 WORKDIR /usr/src/app
 COPY package*.json ./
 RUN npm install

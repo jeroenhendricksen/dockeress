@@ -1,5 +1,5 @@
 # https://hub.docker.com/_/python?tab=tags&page=1&name=3.1
-FROM python:3.10-alpine
+FROM python:3.11-alpine
 
 RUN apk --no-cache add bash tini
 
