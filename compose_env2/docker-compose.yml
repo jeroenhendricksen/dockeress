@@ -1,0 +1,6 @@
+services:
+  secretbuntu:
+    image: ubuntu:22.04
+    environment:
+      - SECURE_PASSWORD
+    command: env | sort
